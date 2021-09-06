@@ -15,10 +15,29 @@ Tu rama está actualizada con 'origin/operador/otro-saludo'.
 * operador/otro-saludo
 
 ################################ GIT Crear BRANCH  ######################
-# Crear nuevas ramas (Branches)
+# Crear nuevas ramas (Branches) "git checkout -b prueba_gudiño"
 [kmmx@fedora Basic-Python-Class]$ git checkout -b prueba_gudiño
 Cambiado a nueva rama 'prueba_gudiño'
 [kmmx@fedora Basic-Python-Class]$ git branch
 * prueba_gudiño
   main
   operador/otro-saludo
+
+################################ GIT Merge BRANCH  ######################
+# Juntar ramas (Branches) "git merge operador/otro-saludo "
+[kmmx@fedora Basic-Python-Class]$ git merge operador/otro-saludo 
+Merge made by the 'recursive' strategy.
+ uno.dos.tres | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 uno.dos.tres
+
+################################ GIT Delete BRANCH  ######################
+# Elimniar ramas (Branches) "git branch -D prueba_gudiño"
+[kmmx@fedora Basic-Python-Class]$ git branch -D prueba_gudiño 
+Eliminada la rama prueba_gudiño (era 86470c7)..
+[kmmx@fedora Basic-Python-Class]$ 
+[kmmx@fedora Basic-Python-Class]$ git branch
+* main
+  operador/otro-saludo
+
+
