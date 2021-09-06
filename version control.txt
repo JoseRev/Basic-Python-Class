@@ -1,0 +1,24 @@
+################################# GIT BRANCH #############################
+# Ver cuales branches tienes en tu repositorio "git branch"
+[kmmx@fedora Basic-Python-Class]$ git branch
+* main
+  operador/otro-saludo
+
+################################ GIT Checkout ###########################
+# Sirve para cambiar entre branches "git checkout operador/otro-saludo"
+[kmmx@fedora Basic-Python-Class]$ git checkout operador/otro-saludo 
+Cambiado a rama 'operador/otro-saludo'
+Tu rama está actualizada con 'origin/operador/otro-saludo'.
+[kmmx@fedora Basic-Python-Class]$ 
+[kmmx@fedora Basic-Python-Class]$ git branch
+  main
+* operador/otro-saludo
+
+################################ GIT Crear BRANCH  ######################
+# Crear nuevas ramas (Branches)
+[kmmx@fedora Basic-Python-Class]$ git checkout -b prueba_gudiño
+Cambiado a nueva rama 'prueba_gudiño'
+[kmmx@fedora Basic-Python-Class]$ git branch
+* prueba_gudiño
+  main
+  operador/otro-saludo
